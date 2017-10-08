@@ -5,14 +5,11 @@
   <%= @song.name %>
   <label for="Artist Name">New Artist Name</label>
        <input type="text" name="Artist Name">
-
-       <br>
-
-      <p>Genres Update</p>
-       <% Genre.all.each do |genre| %>
-         <label for="genre"> <%= genre.name %> </label>
-         <input id="<%= genre.name %>" type="checkbox" name="genres[]" value="<%= genre.id %>" <%='checked' if @song.genres.include?(genre) %> >
-       <% end %>
+    <p>Genres Update</p>
+      <% Genre.all.each do |genre| %>
+        <label for="genre"> <%= genre.name %> </label>
+        <input id="<%= genre.name %>" type="checkbox" name="genres[]" value="<%= genre.id %>" <%='checked' if @song.genres.include?(genre) %> >
+      <% end %>
 
   <input type="submit" value="Save">
 </form>
