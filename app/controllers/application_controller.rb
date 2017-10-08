@@ -13,7 +13,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/genres' do
-    @genres = Genre.all 
+    @genres = Genre.all
     erb :'/genres/index'
   end
 end
