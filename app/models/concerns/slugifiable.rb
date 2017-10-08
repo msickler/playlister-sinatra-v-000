@@ -1,7 +1,8 @@
 module Concerns
-  module Slugifiable
-    module InstanceMethods
 
+  module  Slugifiable
+
+    module InstanceMethods
       def slug
         self.name.downcase.split.join("-")
       end
@@ -14,4 +15,5 @@ module Concerns
     end
 
   end
+
 end
