@@ -9,7 +9,7 @@
   <p> Genres: </p>
   <% Genre.all.each do |genre| %>
   <input id="<%= genre.name" type="checkbox" name="genres[]" value="<%= genre.id %>">
-  <label for="Genre"> <%= genre.name </label>
+  <label for="Genre"> <%= genre.name %></label>
   <% end %>
   <input type="submit" value="Create">
 </form>
