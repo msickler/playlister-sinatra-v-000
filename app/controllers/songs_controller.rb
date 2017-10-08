@@ -14,5 +14,14 @@ class SongsController < ApplicationController
     erb :'/songs/show'
   end
 
+  get '/songs/:slug/edit' do
+    @song = Song.find_by_slug(params[:slug])
+    @song.name = params[:name]
+    @song.artist = params[:artist]
+    @song.genres = params[:genres]
+    @song.save
+    redirect to "/songs/#{@song.slug}"
+  end
+
 
 end
