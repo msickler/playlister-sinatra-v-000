@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/songs/:slug' do
-    
+
   end
 
 end
