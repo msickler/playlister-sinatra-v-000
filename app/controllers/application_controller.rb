@@ -22,4 +22,8 @@ class ApplicationController < Sinatra::Base
     erb :'/artists/index'
   end
 
+  get '/songs/:slug' do
+    
+  end
+
 end
