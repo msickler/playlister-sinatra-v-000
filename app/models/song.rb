@@ -1,4 +1,7 @@
 class Song < ActiveRecord::Base
+  extend Concerns::Slugifiable::ClassMethods
+  include Concerns::Slugifiable::InstanceMethods
+  
   belongs_to :artist
   has_many :genres
 end
