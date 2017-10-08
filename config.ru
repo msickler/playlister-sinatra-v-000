@@ -10,4 +10,3 @@ use SongsController
 use ArtistsController
 use GenresController
 run ApplicationController
-
